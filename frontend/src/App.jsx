@@ -8,14 +8,14 @@ import Dashboard from "./pages/Dashboard.jsx"
 function App() {
   return(
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/recovery" element={<RecoveryPassword />} />
-      <Route path="/new-password" element={<NewPassword />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-    </Routes>
-  </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/recovery" element={<RecoveryPassword />} />
+        <Route path="/new-password" element={<NewPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 export default App
