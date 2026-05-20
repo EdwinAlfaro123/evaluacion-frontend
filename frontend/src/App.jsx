@@ -6,7 +6,8 @@ import NewPassword from "./pages/NewPassword.jsx"
 import Dashboard from "./pages/Dashboard.jsx"
 
 function App() {
-  <BrowserRouter>
+  return(
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/register" element={<Register />} />
@@ -15,5 +16,6 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   </BrowserRouter>
+  )
 }
 export default App

@@ -13,6 +13,11 @@ export const mockPosts = [
     }
 ]
 
+export const getPosts = () => {
+    const post = localStorage.getItem("posts")
+    return post ? JSON.parse(post): mockPosts
+}
+
 export const savePosts= (posts) => {
     localStorage.setItem("posts", JSON.stringify(posts))
 }
